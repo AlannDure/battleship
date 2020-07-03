@@ -1,0 +1,10 @@
+body {
+    background-image: url(../images/fondogames.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.table {
+    color: white;
+}

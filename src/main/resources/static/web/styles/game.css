@@ -1,0 +1,161 @@
+body {
+    background-image: url(../images/fondogame1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color:black;
+}
+
+.salvo{
+    background-color : #ff0000;
+}
+.water{
+    background-image: url(../images/water.jpeg);
+}
+.hit{
+    background-color : gray;
+}
+.sunk{
+    background-color: black;
+}
+
+
+/* GRID STACK */
+.grid-stack-item-content {
+    background-repeat: no-repeat;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    left: 0px !important;
+    right: 0px !important;
+}
+
+.submarineHorizontal{
+    background-image: url(../images/submarinehor.png);
+    background-size: contain;
+}
+
+.carrierHorizontal{
+    background-image: url(../images/carrierhor.png);
+    background-size: contain;
+}
+
+.patrolHorizontal{
+    background-image: url(../images/patrolboathor.png);
+    background-size: contain;
+}
+
+.destroyerHorizontal{
+    background-image: url(../images/destroyerhor.png);
+    background-size: contain;
+}
+
+.battleshipHorizontal{
+    background-image: url(../images/battleshiphor.png);
+    background-size: cover;
+}
+
+.submarineVertical{
+    background-image: url(../images/submarinever.png);
+    background-size: 100% 100%;
+    width: 40px !important;
+}
+
+.carrierVertical{
+    background-image: url(../images/carrierver.png);
+    background-size: 100% 100%;
+    width: 40px !important;
+}
+
+.patrolVertical{
+    background-image: url(../images/patrolboatver.png);
+    background-size: 100% 100%;
+    width: 40px !important;
+}
+
+.destroyerVertical{
+    background-image: url(../images/destroyerver.png);
+    background-size: 100% 100%;
+    width: 40px !important;
+}
+
+.battleshipVertical{
+    background-image: url(../images/battleshipver.png);
+    background-size: 100% 100%;
+    width: 40px !important;
+}
+
+#grid{
+    height: 400px;
+    width: 400px;
+}
+
+#grid-ships{
+    width: 440px;
+    padding-left: 40px;
+    padding-top: 40px;
+    background-image: url(../images/grid-bkg.png);
+    background-size: contain;
+    
+}
+
+#grid-salvoes{
+    cursor: grab;
+    height: 440px;
+    width: 440px;
+    border: gray 2px solid;
+    color: white;
+    
+  
+}
+#grid-salvoes th{
+    border: gray 1px solid;
+    width: 38px;
+    height: 38px;
+}
+#grid-salvoes td{
+    border: gray 1px solid;
+    width: 38px;
+    height: 38px;
+}
+
+#table-pp{
+    border: gray 2px solid;
+    
+}
+#table-pp th{
+    border: gray 2px solid;
+}
+#table-pp td{
+    border: gray 2px solid;
+}
+#table-op{
+    border: gray 2px solid;
+    
+}
+#table-op th{
+    border: gray 2px solid;
+}
+#table-op td{
+    border: gray 2px solid;
+}
+
+#gameState {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+    border: 2px solid grey;
+    box-sizing: content-box;
+    border-radius: 10px;
+    width: 650px;
+    height: 50px;
+    overflow: auto;
+}
+
+table{
+    text-align: center;
+}
+
+
