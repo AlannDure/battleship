@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/fondogame1.jpg);
+    background-image: url(../images/fondogame.gif);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -9,14 +9,23 @@ body {
 .salvo{
     background-color : #ff0000;
 }
+
 .water{
-    background-image: url(../images/water.jpeg);
+   background-image: url(../images/water.gif); 
+   background-size: cover;
 }
 .hit{
-    background-color : gray;
+    background-image : url(../images/hit.gif);
+    background-size: cover;
+   
 }
 .sunk{
-    background-color: black;
+    background-image : url(../images/sink.gif);
+    background-size: cover;
+}
+
+#playersInfo{
+    color: white;
 }
 
 
@@ -95,6 +104,8 @@ body {
     padding-top: 40px;
     background-image: url(../images/grid-bkg.png);
     background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -104,6 +115,8 @@ body {
     width: 440px;
     border: gray 2px solid;
     color: white;
+    margin-left: auto;
+    margin-right: auto;
     
   
 }
@@ -120,6 +133,7 @@ body {
 
 #table-pp{
     border: gray 2px solid;
+    color:white;
     
 }
 #table-pp th{
@@ -130,6 +144,7 @@ body {
 }
 #table-op{
     border: gray 2px solid;
+    color:white;
     
 }
 #table-op th{
@@ -146,12 +161,17 @@ body {
     font-weight: bold;
     font-size: 20px;
     margin: 10px 0;
-    border: 2px solid grey;
+    border: 5px solid grey;
     box-sizing: content-box;
     border-radius: 10px;
     width: 650px;
     height: 50px;
     overflow: auto;
+    color:white;
+}
+
+#players{
+    color: white;
 }
 
 table{

@@ -4,7 +4,26 @@ body {
     background-attachment: fixed;
     color: white;
 }
+#playerInfo{
+    margin-top: 20px;
+}
+#gameList{
+    margin-top: 20px;
+    color: black;
+}
+#gameStats{
+    margin-top: 20px;
+}
+#headingThree{
+    background-color: rgba(77, 182, 196, 0.274);
+    
 
+}
+#collapseThree{
+    background-color: rgba(77, 182, 196, 0.274);
+   
+}
 .table {
-    color: white;
+    color:white;
+    
 }

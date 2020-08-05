@@ -258,7 +258,7 @@ var app = new Vue({
             this.gameView.salvoes.forEach(x => {
                 x.locations.forEach(location => {
                     if (x.player == app.playerOne.id) {
-                        document.getElementById(location).classList.add("water")
+                        document.getElementById(location).classList.add("water");
                         document.getElementById(location).innerHTML = x.turn;
                     }
                 })
@@ -268,7 +268,8 @@ var app = new Vue({
             this.gameView.hits.forEach(x => {
                 x.hits.forEach(hits => {
                     if (x.player == app.playerOne.id) {
-                        document.getElementById(hits).classList.add("hit")
+                        document.getElementById(hits).classList.add("hit");
+                        document.getElementById(hits).classList.remove("water");
                         document.getElementById(hits).innerHTML = x.turn;
                     }
                 })
@@ -279,7 +280,9 @@ var app = new Vue({
                 x.sunks.forEach(sunks => {
                     sunks.locations.forEach(y => {
                         if (x.player == app.playerOne.id) {
-                            document.getElementById(y).classList.add("sunk")
+                            document.getElementById(y).classList.add("sunk");
+                            document.getElementById(y).classList.remove("hit");
+                            document.getElementById(y).classList.remove("water");
                         }
                     })
                 })
@@ -446,7 +449,7 @@ function conv2(letter) {
     }
 }
 var timerId;
-
+/*
 function start() {
     if (app.gameState == "OPPONENT_PLACES_SALVOES" || app.gameState == "WAITING_OPPONENT" || app.gameState == "OPPONENT_PLACES_SHIPS") {
         timerId = setTimeout(function () {
@@ -454,3 +457,4 @@ function start() {
         }, 10000);
     }
 }
+*/
