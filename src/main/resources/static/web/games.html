@@ -19,12 +19,16 @@
             <div class="col d-flex justify-content-center">
                 <audio src="audio/salvoTheme.mp3" controls>
                 </audio>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center m-4" id="welcomePlayer">
+                <h3 v-if="playerlog != null">Welcome: {{playerlog.username}} !</h3>
             </div>
         </div>
         <div class="row" id="playerInfo">
             <div class="col d-flex justify-content-center">
-
-                <h3 v-if="playerlog != null">Hi {{playerlog.username}}!</h3>
 
                 <form v-if="playerlog == null" id="login-form">
 
